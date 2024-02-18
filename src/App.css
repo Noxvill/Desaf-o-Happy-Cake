@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+.mainContainer{
+
+display: flex;
+flex-direction: column;
+
+}
+
+.navBar{
+
+display: flex;
+
+}

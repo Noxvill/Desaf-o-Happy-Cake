@@ -11,11 +11,11 @@ return(
 <>
       <Navbar bg="danger" data-bs-theme="Danger" expand="lg" fixed="top">
         <Container>
-          <Navbar.Brand href="#home" className="text-light">Home</Navbar.Brand>
+        
+          <Navbar.Brand href="" className="text-light"><Link to="Home">home</Link></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="text-light">Contacto</Nav.Link>
-            
-            <Nav.Link href="#pricing" className="text-light">Happy Cake</Nav.Link>
+            <Nav.Link href="" className="text-light"><Link to="Contacto">Contacto</Link></Nav.Link>
+            <Nav.Link href="" className="text-light"><Link to="/">Happy Cake</Link></Nav.Link>
           </Nav>
         </Container>
       </Navbar>

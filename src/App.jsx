@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Menubar from './components/Menubar.jsx'
 import Contacto from './components/Contacto.jsx'
 import Home from './components/Home.jsx'
+import NotFound from './components/NotFound.jsx'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +21,13 @@ function App() {
       </div>
 <div className='content'>
 
-<Home/>
+<Routes>
+
+<Route path='/' element={<Home/>} />
+<Route path='Home' element={<Home/>} />
+<Route path='Contacto' element={<Contacto/>} />
+<Route path='*' element={<NotFound/>} />
+</Routes>
 
 </div>
 
